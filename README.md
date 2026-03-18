@@ -50,23 +50,6 @@ flowchart LR
   L --> B
 ```
 
-### Source evidence to private state transition
-
-```mermaid
-flowchart LR
-  A["Institutional Source Systems"] --> B["API Adapter Lane"]
-  A --> C["zkTLS Attestation Lane"]
-
-  B --> D["Canonical Source Evidence"]
-  C --> D
-
-  D --> E["Policy Evaluation"]
-  E --> F["Proof Verification"]
-  F --> G["Issuer Approval Controls"]
-  G --> H["Settlement Record"]
-  H --> I["Private Asset State Transition"]
-```
-
 ## What’s In The Repo
 
 ### Apps
